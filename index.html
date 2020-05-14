@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Kreon" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Registro</title>
+</head>
+
+<body>
+  <div class="cont1">
+    <div class="form-top">
+      <h2>Registro De Usuario</h2>
+    </div>
+    <form class="form-reg" action="">
+
+      <h3>Número De Identificación</h3>
+      <input class="input" type="number" placeholder="Ingrese número de identificación." required>
+
+      <h3>Primer Nombre</h3>
+      <input class="input" type="text" placeholder="Ingrese primer nombre" required>
+
+      <h3>Segundo Nombre (Opcional)</h3>
+      <input class="input" type="text" placeholder="Ingrese segundo nombre.">
+
+      <h3>Primer Apellido</h3>
+      <input class="input" type="text" placeholder="Ingrese primer apellido." required>
+
+      <h3>Segundo Apellido</h3>
+      <input class="input" type="text" placeholder="Ingrese segundo apellido." required>
+
+      <h3>Correo Electrónico</h3>
+      <input class="input" type="email" placeholder="Ingrese correo electrónico." required>
+
+      <h3>Contraseña</h3>
+      <input class="input" type="password" placeholder="Ingrese contraseña." required>
+
+      <h3>Género</h3>
+      <div class="select">
+      <select required>
+
+           <option value="" disabled selected>Seleccionar Género...</option>
+           <option value="1">Masculino</option>
+           <option value="2">Femenino</option>
+
+      </select>
+      </div>
+
+
+      <h3>Fecha De Nacimiento</h3>
+        <input class="fecha" type="date" onclick="this.value = '1900-01-01';" required>
+
+
+      <h3>Estado Civil</h3>
+      <div class="select">
+      <select required>
+
+           <option value="" disabled selected>Seleccionar Estado Civil...</option>
+           <option value="1">Soltero/a</option>
+           <option value="2">Comprometido/a</option>
+           <option value="3">Casado/a</option>
+           <option value="4">Unión libre</option>
+           <option value="5">Separado/a</option>
+           <option value="6">Divorciado/a</option>
+           <option value="7">Viudo/a</option>
+
+      </select>
+      </div>
+
+      <h3>Dirección</h3>
+      <input class="input" type="text" placeholder="Ingrese dirección de vivienda." required>
+
+      <h3>Teléfono</h3>
+      <input class="input" type="text" placeholder="Ingrese teléfono móvil o teléfono fijo." required>
+
+      <h3>Tipo De Estudio</h3>
+      <div class="select">
+      <select required>
+
+           <option value="" disabled selected>Seleccionar Tipo De Estudio...</option>
+           <option value="1">Primaria</option>
+           <option value="2">Secundaria</option>
+           <option value="3">Técnico</option>
+           <option value="4">Tecnólogo</option>
+           <option value="5">Universitario</option>
+
+      </select>
+      </div>
+
+      <h3>Experiencia Laboral</h3>
+      <div class="select">
+      <select required>
+
+           <option value="" disabled selected>Seleccionar Experiencia Laboral...</option>
+           <option value="1">Si</option>
+           <option value="2">No</option>
+
+      </select>
+      </div>
+
+      <h3>Último Trabajo</h3>
+      <input class="input" type="text" placeholder="Ingrese último trabajo" required >
+      <i>De no tener, ingresar "No aplica"</i>
+
+      <h3>Cargo Laboral</h3>
+      <input class="input" type="text" placeholder="Ingrese último cargo laboral" required>
+      <i>De no tener, ingresar "No aplica"</i>
+
+      <h3>Descripción</h3>
+      <textarea name="texto" rows="4" cols="40" placeholder=" Ingrese una descripción breve de su perfil profesional." required></textarea>
+
+      <h3>Subir Foto De Perfil</h3>
+      <input name="uploadedfile" type="file" />
+      <br></br>
+      <div class="btn-form">
+        <input class="btn-submit" type="submit" value="Registrar">
+        <input class="btn-reset" type="reset" value="Limpiar Campos">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
